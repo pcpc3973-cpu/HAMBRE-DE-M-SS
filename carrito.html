@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito - HAMBRE DE MÁS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="cuerpo.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">HAMBRE DE MÁS</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="PRODUCTO.html">Tienda</a></li>
+        <li><a href="MEMÚ.html">Menú</a></li>
+        <li><a href="CONTACTO.html">Contacto</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  
+   <main>
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="lista-carrito"></ul>
+  </section>
+
+
+  <section id="pago">
+    <h2>Finalizar Compra</h2>
+    <form id="form-pago">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="text" placeholder="Dirección de envío" required>
+
+
+      <select id="metodo-pago" required>
+        <option value="">Selecciona método de pago</option>
+        <option value="Tarjeta">Tarjeta</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia">Transferencia</option>
+      </select>
+
+    
+      <div id="cuenta-info" style="display:none;">
+        <input type="text" id="numero-cuenta" placeholder="Número de cuenta">
+      </div>
+
+      <button type="submit">Pagar ahora</button>
+    </form>
+  </section>
+
+  <section id="recibo" style="display:none; margin-top:2rem;">
+    <h2></h2>
+    <div id="detalle-recibo"></div>
+  </section>
+</main>
+  <footer>
+    <p>&copy; 2025 HAMBRE DE MÁS. TODOS LOS DERECHOS RESERVADOS</p>
+  </footer>
+</body>
+</html>
